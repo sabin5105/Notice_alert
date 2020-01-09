@@ -6,6 +6,7 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "websaver.settings")
 import django
 django.setup()
 from parsed_data.models import WebData
+import telegram
 
 def parse_web():
     req = requests('http://www.seoultech.ac.kr/service/info/janghak/')
